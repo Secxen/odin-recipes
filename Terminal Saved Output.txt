@@ -1,0 +1,203 @@
+Last login: Wed Apr 26 09:50:56 on ttys001
+nescenbernardo@Nescens-MacBook-Air ~ % cd repos/odin-recipes
+nescenbernardo@Nescens-MacBook-Air odin-recipes % code .
+nescenbernardo@Nescens-MacBook-Air odin-recipes % mkdir recipes
+nescenbernardo@Nescens-MacBook-Air odin-recipes % /ls
+zsh: no such file or directory: /ls
+nescenbernardo@Nescens-MacBook-Air odin-recipes % ls
+README.md	index.html	recipes
+nescenbernardo@Nescens-MacBook-Air odin-recipes % cd recipes
+nescenbernardo@Nescens-MacBook-Air recipes % touch japanesecurry.html
+nescenbernardo@Nescens-MacBook-Air recipes % ls
+japanesecurry.html
+nescenbernardo@Nescens-MacBook-Air recipes % cd -
+~/repos/odin-recipes
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.html
+	recipes/
+
+nothing added to commit but untracked files present (use "git add" to track)
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git add index.html
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git add recipes/
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git commit -m "Add index.html,recipes dir, and Japanese Curry.html"
+[main bf1ebed] Add index.html,recipes dir, and Japanese Curry.html
+ 2 files changed, 20 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 recipes/japanesecurry.html
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git log
+commit bf1ebed4ce8b9aae7a3fe661dfa63834085a43d5 (HEAD -> main)
+Author: Secxen <secxenart@gmail.com>
+Date:   Wed Apr 26 10:03:52 2023 -0700
+
+    Add index.html,recipes dir, and Japanese Curry.html
+
+commit aa02cab16f424c55fc6d406046f57ca7a0bfecdb (origin/main, origin/HEAD)
+Author: Secxen <126662986+Secxen@users.noreply.github.com>
+Date:   Wed Apr 26 09:40:28 2023 -0700
+
+    Initial commit
+nescenbernardo@Nescens-MacBook-Air odin-recipes % ls
+README.md	index.html	recipes
+nescenbernardo@Nescens-MacBook-Air odin-recipes % mkdir images
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git commit -m "Add images dir with japanese curry jpg"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	images/
+
+nothing added to commit but untracked files present (use "git add" to track)
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git commit -m "add images/dir with japanesecurry.jpg"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	images/
+
+nothing added to commit but untracked files present (use "git add" to track)
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git add images/
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git commit -m "Add description, ingredients, and steps to japanesecurry.html
+dquote> "
+[main 49babe6] Add description, ingredients, and steps to japanesecurry.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 images/JapaneseCurry.jpg
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 152.28 KiB | 1.60 MiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:Secxen/odin-recipes.git
+   aa02cab..49babe6  main -> main
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+	modified:   recipes/japanesecurry.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git add .
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git push
+Everything up-to-date
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+	modified:   recipes/japanesecurry.html
+
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git commit -m "add files and recommitted. Still getting use to this."
+[main 569217c] add files and recommitted. Still getting use to this.
+ 2 files changed, 45 insertions(+), 3 deletions(-)
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.78 KiB | 1.78 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Secxen/odin-recipes.git
+   49babe6..569217c  main -> main
+nescenbernardo@Nescens-MacBook-Air odin-recipes % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+nescenbernardo@Nescens-MacBook-Air odin-recipes % cd recipes
+nescenbernardo@Nescens-MacBook-Air recipes % touch lazypizzapocket.html
+nescenbernardo@Nescens-MacBook-Air recipes % ls
+japanesecurry.html	lazypizzapocket.html
+nescenbernardo@Nescens-MacBook-Air recipes % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   ../index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../images/LazyPizzaPocket.jpg
+	lazypizzapocket.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nescenbernardo@Nescens-MacBook-Air recipes % git add .
+nescenbernardo@Nescens-MacBook-Air recipes % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   lazypizzapocket.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   ../index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../images/LazyPizzaPocket.jpg
+
+nescenbernardo@Nescens-MacBook-Air recipes % git add ../index.html
+nescenbernardo@Nescens-MacBook-Air recipes % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   ../index.html
+	new file:   lazypizzapocket.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../images/LazyPizzaPocket.jpg
+
+nescenbernardo@Nescens-MacBook-Air recipes % git add ../images/LazyPizzaPocket.jpg
+nescenbernardo@Nescens-MacBook-Air recipes % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   ../images/LazyPizzaPocket.jpg
+	modified:   ../index.html
+	new file:   lazypizzapocket.html
+
+nescenbernardo@Nescens-MacBook-Air recipes % git commit -m "Add lazypizzapocket.jpg to images dir"    
+[main c7fe94b] Add lazypizzapocket.jpg to images dir
+ 3 files changed, 38 insertions(+), 1 deletion(-)
+ create mode 100644 images/LazyPizzaPocket.jpg
+ create mode 100644 recipes/lazypizzapocket.html
+nescenbernardo@Nescens-MacBook-Air recipes % git commit -m "Add lazypizzapocket.html"
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+nescenbernardo@Nescens-MacBook-Air recipes % git commit --amend 
+hint: Waiting for your editor to close the file... 
